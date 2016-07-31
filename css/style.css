@@ -12,8 +12,13 @@ body {
 	padding: 0px auto;
 	margin:  0px auto;
 	background: #ffffff;
-
+	text-decoration: none;
 }
+
+a {
+	text-decoration: none;
+}
+
 
 .wrapper {
     width: 1000px;
@@ -22,7 +27,6 @@ body {
     justify-content: center;
     margin: 0 auto;
     overflow: hidden;	
-	
 }
 
 .header-top {
@@ -38,7 +42,7 @@ body {
 	background: linear-gradient(to top, #a0bfcc, #0c3357); 
 	border-radius:11px;
 	text-align:center;
-	margin-left: 5px;
+	margin-left: 7px;
 	margin-top: 5px;
 }
 
@@ -82,11 +86,14 @@ body {
 	margin-right: 0px;
 }
 
-input[type="text"], input[type="password"], input[type="submit"] {
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
 	font: 11px 'Lucida Sans Unicode', Arial, sans-serif;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"],
+input[type="password"] {
 	width: 103px;
     height: 16px;
     vertical-align: middle;
@@ -115,8 +122,6 @@ input[type="submit"] {
 input[type="submit"]:hover {
 	text-decoration: underline;
 }
-
-
 
 .reg a {
 	font: 11px  'Lucida Sans Unicode', Arial, sans-serif;
@@ -156,7 +161,7 @@ input[type="submit"]:hover {
     flex-direction: row;
     justify-content: space-around;
 	height: 17px;
-	width: 61px;
+	width: 64px;
 	border: 1px solid rgba(189,196,199,1);
 	border-radius: 16px;
 	box-shadow: 1px 2px 7px 0px rgba(189,196,199,1);	
@@ -198,7 +203,6 @@ input[type="submit"]:hover {
 
 .logo span {
 	font: 32px Arial, sans-serif;
-		
 }
 
 nav {
@@ -217,10 +221,11 @@ nav {
 	margin-top: 6px;
 }
 
-.menu ul {
+.menu ul {	
 	float: left;
 	width: 540px;	
-	margin: auto;	
+	margin: auto;
+
 }
 .menu ul li {
 	 display: inline-block;
@@ -234,7 +239,8 @@ nav {
 	text-transform: uppercase;
 	text-align: center;	
     line-height: 26px;
-    padding: 0px 15px;	
+    padding: 0px 15px;
+	text-decoration: none;
 }		
 
 .menu li a:hover {
@@ -247,7 +253,7 @@ nav {
 	display: flex;
 	flex-flow: row wrap;
     justify-content: flex-end; 
-	align-items: center;	
+	align-items: center;
 }
 
 .cart p {
@@ -260,7 +266,7 @@ nav {
 .cart p:before {
 	content: ' ';
     float: left;
-	background-image: url(../img/icon_cart.png);
+	background-image: url(../img/basket.png);
 	background-position: center left;
 	background-repeat: no-repeat;
 	height: 17px;
@@ -274,12 +280,9 @@ nav {
 	padding: 0 10px 0 8px;
 }
 			
-			
-			/* FILTERS */
-			
 .filters {
 	display:flex;
-	flex-flow: row nowrap;
+	margin-right: 474px;
 	margin-top: 10px;
 }	
 		
@@ -424,51 +427,6 @@ select {
     background-position: -12px -12px;
 }
 
-
-.filters-block3 {
-	width: 246px;
-	height: 136px;
-	background-color: white;
-	border: 1px solid #9c9c9d;
-	border-radius: 15px;
-	box-shadow: 2px 4px 5px rgba(150, 150, 150, 0.75);
-	padding: 0 10px;
-} 
-
-.filters-block3 .line {
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;	
-}
-
-.filters-block3 select {
-	width: 59px;
-}
-
-.block3-left {
-	width: 65%;	
-	float:left;	
-	padding-right: 5px;
-}
-
-.block3-left .line {
-	height: 32px;
-}
-
-.block3-right {
-	float: left;
-	width: 68px;
-	height: 107px;
-	border-left: 1px solid #bdc6ca;
-	margin-top: 3px;
-	padding-left: 5px;	
-}
-
-.block3-right .line {
-	padding-top: 5px;
-}
-
-			/* LEFT-ASIDE*/
 .conteiner {
 	display: flex;
 	flex-flow: row wrap;
@@ -549,8 +507,6 @@ aside {
     float: left;
 	margin-right: 5px;
 }
-
-          /*  MAIN */
 		  
 main {
 	display: flex;
@@ -598,10 +554,6 @@ p.item-model {
 	border-radius: 7px;
 }
 
-.item-brand-model-photo:hover {
-	border: 3px solid #213a4d;
-}
-
 p.item-price {
 	font: 16px Arial, Tahoma, sans-serif;
 	color: #114165;
@@ -609,8 +561,6 @@ p.item-price {
 	font-weight: bold;
 	line-height: 20px;
 }
-
-			/* RIGHT-ASIDE */
 		
 .right-sidebar p {
 	font: 14px 'Lucida Sans Unicode', Arial, sans-serif;
@@ -687,8 +637,6 @@ p.item-price {
     cursor: pointer;
 }
 
-			/* FIGURE*/
-
 figure {
 	display: flex;	
 	flex-flow: row wrap;
@@ -700,8 +648,6 @@ figure {
 figure img {
 	margin: 6px 15px;
 }
-
-			/* FOOTER*/
 			
 footer {
 	display: flex;
@@ -755,4 +701,7 @@ footer p {
 	text-align: center;	
 	line-height: 18px;
 	width: 908px;
+}
+footer p a{
+	color: #7f4740;
 }
